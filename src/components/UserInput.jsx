@@ -1,7 +1,7 @@
 import {useState} from "react";
 export default function UserInput(){
     const [userInput,setUserInput]= useState({
-        intialInvestment:1000,
+        initialInvestment:1000,
         annualInvestment:1200,
         expectedReturn:6,
         duration:10,
@@ -18,7 +18,7 @@ export default function UserInput(){
             <div className="input-group">
                 <p>
                     <label>Initial Investment</label>
-                       <input type="number" required value={userInput.intialInvestment} onChange={(e)=> handleChange('intialInvestment',e.target.value)}/>
+                       <input type="number" required value={userInput.initialInvestment} onChange={(e)=> handleChange('initialInvestment',e.target.value)}/>
                 </p>
                 <p>
                     <label>Annual Investment</label>
